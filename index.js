@@ -52,4 +52,15 @@ $(function() {
         opacity: 0.5,
         });
     $('.header').stickyHeader();
+    $( "#weather-div" ).dialog({
+        autoOpen: false,
+        show: {
+          effect: "blind",
+          duration: 300
+        },
+        width:  400
+      });
+      $( "#opener" ).on( "click", function() {
+        $( "#weather-div" ).dialog( "open" );
+      });
 });
