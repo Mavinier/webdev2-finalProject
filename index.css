@@ -13,6 +13,10 @@ form {
     display: flex;
     flex-direction: column;
 }
+form input:hover{
+    background-color: rgb(235, 255, 255);
+}
+
 nav {
     display: flex;
     justify-content: space-between;
