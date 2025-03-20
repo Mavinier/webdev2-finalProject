@@ -41,7 +41,7 @@ async function fetchWeather() {
 
 window.onload = fetchWeather;
 $(function() {
-    $("#accordion").accordion({
+    $("#about").accordion({
         collapsible: true
     });
     $("#projects").accordion({
