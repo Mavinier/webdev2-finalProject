@@ -47,9 +47,9 @@ $(function() {
     $("#projects").accordion({
         collapsible: true
     });
-    $("#contact").accordion({
-        collapsible: true
-    });
-    $( "#draggable" ).draggable();
+    $("#draggable").draggable({
+        revert: "invalid",
+        opacity: 0.5,
+        });
     $('.header').stickyHeader();
 });
