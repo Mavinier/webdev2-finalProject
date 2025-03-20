@@ -13,11 +13,11 @@ Use at least three JavaScript/jQuery-based visual effects, such as:
     o Lightbox to display images in a modal.
     ~~o Sticky navigation bar that stays at the top as users scroll.~~
     o Tooltip to display additional information on hover.
-4. At least 2 jQuery UI Widgets
-Your project must include at least two jQuery UI widgets. Examples include:
+4. ~~At least 2 jQuery UI Widgets~~j
+~~Your project must include at least two jQuery UI widgets. Examples include:~~
     ~~o Accordion (collapsible sections)~~
     o Tabs
-    o Dialog (modal windows)
+    o ~~Dialog (modal windows)~~
     o Datepicker
     o Slider
 5. ~~Implement atleast 1 jQuery UI Interactions~~
