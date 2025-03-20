@@ -15,8 +15,8 @@ examples:
     o Tooltip to display additional information on hover.
 4. At least 2 jQuery UI Widgets
 Your project must include at least two jQuery UI widgets. Examples include:
-    o Accordion (collapsible sections)
-    o Tabs
+    ~~o Accordion (collapsible sections)~~
+    oTabs
     o Dialog (modal windows)
     o Datepicker
     o Slider
