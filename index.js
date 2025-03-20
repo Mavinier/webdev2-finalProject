@@ -21,4 +21,10 @@ $(function() {
     $("#accordion").accordion({
         collapsible: true
     });
+    $("#projects").accordion({
+        collapsible: true
+    });
+    $("#contact").accordion({
+        collapsible: true
+    });
 });
