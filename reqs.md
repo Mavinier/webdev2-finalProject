@@ -11,12 +11,12 @@ Use at least one jQuery plugin to enhance the functionality of your project. Som
 examples:
     o Carousel for rotating images or testimonials.
     o Lightbox to display images in a modal.
-    o Sticky navigation bar that stays at the top as users scroll.
+    ~~o Sticky navigation bar that stays at the top as users scroll.~~
     o Tooltip to display additional information on hover.
 4. At least 2 jQuery UI Widgets
 Your project must include at least two jQuery UI widgets. Examples include:
     ~~o Accordion (collapsible sections)~~
-    oTabs
+    o Tabs
     o Dialog (modal windows)
     o Datepicker
     o Slider

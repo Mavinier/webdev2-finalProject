@@ -1,11 +1,15 @@
 body {font-family: Arial, sans-serif;}
+
 section { padding: 20px;}
+
 form label, form input, form textarea {margin-bottom: 10px;}
+
 nav a {
     color: #333;
     text-decoration: none;
     margin: 0 10px;
 }
+
 form {
     display: inline-block;
     margin: auto;
@@ -13,6 +17,7 @@ form {
     display: flex;
     flex-direction: column;
 }
+
 form input:hover{
     background-color: rgb(235, 255, 255);
 }
@@ -23,24 +28,36 @@ nav {
     max-width: 800px;
     margin: auto;
 }
+
 #about h2, #projects h2, #contact h2 {
     font-size: 28px;
     margin-bottom: 10px;
 }
+
 #contact {width: 300px;}
+
+.fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+ }
+
 .header {
     background-color: #f5f5f5;
     padding: 10px;
     text-align: center;
 }
+
 .header h1 {
     margin: 0;
 }
+
 .project-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
 .project-card {
     text-align: center;
     width: 20%;
@@ -48,6 +65,7 @@ nav {
     padding: 10px;
     background-color: #f5f5f5;
 }
+
 .project-card img {
     max-width: 100%;
     height: auto;

@@ -16,6 +16,7 @@ $(document).ready(function(){
         }
     });
 });
+
 $(function() {
     $("#accordion").accordion({
         collapsible: true
@@ -27,4 +28,5 @@ $(function() {
         collapsible: true
     });
     $( "#draggable" ).draggable();
+    $('.header').stickyHeader();
 });
