@@ -30,7 +30,7 @@ async function fetchWeather() {
         
         if (data.cod === 200) {
             document.getElementById("weather").innerHTML = 
-                `Weather in ${data.name}: ${data.weather[0].description}, ${data.main.temp}°C`;
+                `Weather in ${data.name}: ${data.weather[0].description}, ${parseInt(data.main.temp)}°C`;
         } else {
             document.getElementById("weather").innerHTML = "Weather data unavailable.";
         }
