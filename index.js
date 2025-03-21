@@ -64,4 +64,9 @@ $(function() {
       $( "#opener" ).on( "click", function() {
         $( "#weather-div" ).dialog( "open" );
       });
+      $("input").hover(function(){
+        $(this).css("background-color","rgb(197, 254, 254)");
+      }, function(){
+        $(this).css("background-color","white");
+      })
 });
