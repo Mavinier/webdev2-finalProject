@@ -70,3 +70,16 @@ $(function() {
         $(this).css("background-color","white");
       })
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const contactBox = document.querySelector("#contact");
+
+    function checkVisibility() {
+        if (contact.getBoundingClientRect().top < window.innerHeight * 0.8) {
+            contactBox.classList.add("show");
+        }
+    }
+
+    window.addEventListener("scroll", checkVisibility);
+    checkVisibility();
+});
