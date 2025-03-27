@@ -4,8 +4,8 @@
 Use at least three JavaScript/jQuery-based visual effects, such as:
     o Fade-in or slide-up effects when scrolling.
     o Smooth scrolling for navigation.
-    o Hover animations (e.g., buttons changing color/size).
-    o Elements appearing dynamically when the user interacts.
+    o ~~Hover animations (e.g., buttons changing color/size).~~
+    o ~~Elements appearing dynamically when the user interacts.~~
 3. ~~At least 1 jQuery Plugin~~
 ~~Use at least one jQuery plugin to enhance the functionality of your project. Some~~
 ~~examples:~~

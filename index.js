@@ -17,26 +17,27 @@ $(document).ready(function(){
     });
 });
 
-async function fetchWeather() {
+function fetchWeather() {
     const apiKey = "d284b1e7273792f0707215e5f39037a8";
     const city = "Red Deer";
     const country = "ca";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&appid=${apiKey}`;
 
-
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-        
-        if (data.cod === 200) {
-            document.getElementById("weather").innerHTML = 
-                `Weather in ${data.name}: ${data.weather[0].description}, ${parseInt(data.main.temp)}°C`;
-        } else {
-            document.getElementById("weather").innerHTML = "Weather data unavailable.";
+    $.ajax({
+        url: url,
+        method: 'GET',
+        dataType: 'json',
+        success: function(data) {
+            if (data.cod === 200) {
+                $("#weather").html(`Weather in ${data.name}: ${data.weather[0].description}, ${parseInt(data.main.temp)}°C`);
+            } else {
+                $("#weather").html("Weather data unavailable.");
+            }
+        },
+        error: function() {
+            $("#weather").html("Error fetching weather.");
         }
-    } catch (error) {
-        document.getElementById("weather").innerHTML = "Error fetching weather.";
-    }
+    });
 }
 
 window.onload = fetchWeather;
@@ -63,4 +64,9 @@ $(function() {
       $( "#opener" ).on( "click", function() {
         $( "#weather-div" ).dialog( "open" );
       });
+      $("input").hover(function(){
+        $(this).css("background-color","rgb(197, 254, 254)");
+      }, function(){
+        $(this).css("background-color","white");
+      })
 });
