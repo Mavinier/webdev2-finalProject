@@ -70,6 +70,10 @@ nav {
     margin-bottom: 10px;
 }
 
+#opener {
+    cursor: pointer;
+}
+
 #weather {
     font-family: Arial, sans-serif;
     text-align: center;
