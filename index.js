@@ -74,10 +74,18 @@ $(function() {
         if($("#jquerytheme").attr("href") === "https://code.jquery.com/ui/1.14.1/themes/smoothness/jquery-ui.css"){
             $("#jquerytheme").attr("href","https://code.jquery.com/ui/1.14.1/themes/vader/jquery-ui.css");
             $("#dark").text("Light Mode"); 
+            document.getElementById("head").classList.toggle("header-dark");
+            document.getElementById("navig").classList.toggle("nav-dark");
+            document.getElementById("weather").classList.toggle("weather-dark");
+            $("body").css("background-color"," rgb(28, 26, 26)");
         }
         else{
             $("#jquerytheme").attr("href","https://code.jquery.com/ui/1.14.1/themes/smoothness/jquery-ui.css");
             $("#dark").text("Dark Mode"); 
+            document.getElementById("head").classList.toggle("header-dark");
+            document.getElementById("navig").classList.toggle("nav-dark");
+            document.getElementById("weather").classList.toggle("weather-dark");
+            $("body").css("background-color","white");
         }
     });
 });
