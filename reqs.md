@@ -1,5 +1,5 @@
-1. Theme and Styling
-    o Implement a theme (e.g., toggle between light and dark mode).
+1. ~~Theme and Styling~~
+    o ~~Implement a theme (e.g., toggle between light and dark mode).~~
 2. ~~Interactive effects and animations~~
 ~~Use at least three JavaScript/jQuery-based visual effects, such as:~~
     o ~~Fade-in or slide-up effects when scrolling.~~
