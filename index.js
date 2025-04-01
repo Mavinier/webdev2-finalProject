@@ -41,6 +41,7 @@ function fetchWeather() {
 }
 
 window.onload = fetchWeather;
+
 $(function() {
     $("#about").accordion({
         collapsible: true
@@ -51,7 +52,7 @@ $(function() {
     $("#draggable").draggable({
         revert: "invalid",
         opacity: 0.5,
-        });
+    });
     $('.header').stickyHeader();
     $( "#weather-div" ).dialog({
         autoOpen: false,
@@ -60,26 +61,34 @@ $(function() {
           duration: 300
         },
         width:  400
-      });
-      $( "#opener" ).on( "click", function() {
+    });
+    $( "#opener" ).on( "click", function() {
         $( "#weather-div" ).dialog( "open" );
-      });
-      $("input").hover(function(){
+    });
+    $("input").hover(function(){
         $(this).css("background-color","rgb(197, 254, 254)");
       }, function(){
         $(this).css("background-color","white");
-      })
+    });
+    $("#dark").on("click",function(){
+        if($("#jquerytheme").attr("href") === "https://code.jquery.com/ui/1.14.1/themes/smoothness/jquery-ui.css"){
+            $("#jquerytheme").attr("href","https://code.jquery.com/ui/1.14.1/themes/vader/jquery-ui.css");
+            $("#dark").text("Light Mode"); 
+        }
+        else{
+            $("#jquerytheme").attr("href","https://code.jquery.com/ui/1.14.1/themes/smoothness/jquery-ui.css");
+            $("#dark").text("Dark Mode"); 
+        }
+    });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
     const contactBox = document.querySelector("#contact");
-
     function checkVisibility() {
         if (contact.getBoundingClientRect().top < window.innerHeight * 0.8) {
             contactBox.classList.add("show");
         }
     }
-
     window.addEventListener("scroll", checkVisibility);
     checkVisibility();
 });
