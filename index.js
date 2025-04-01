@@ -49,9 +49,10 @@ $(function() {
     $("#projects").accordion({
         collapsible: true
     });
-    $("#draggable").draggable({
+    $("#contact").draggable({
         revert: "invalid",
         opacity: 0.5,
+        containment: 'window'
     });
     $('.header').stickyHeader();
     $( "#weather-div" ).dialog({
