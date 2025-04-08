@@ -84,7 +84,7 @@ nav {
     transform: translateY(0); 
 }
 
-#about h2, #projects h2, #contact h2 {
+#about h2, #projects h2, #contact h2, #achievements h2{
     font-size: 28px;
     margin-bottom: 10px;
     text-align: center;

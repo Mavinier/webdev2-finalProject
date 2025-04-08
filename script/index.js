@@ -46,6 +46,9 @@ $(function() {
     $("#about").accordion({
         collapsible: true
     });
+    $("#achievements").accordion({
+        collapsible: true
+    });
     $("#projects").accordion({
         collapsible: true
     });
