@@ -9,6 +9,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
     </head>
     <body>
+        <!-- Header and Navigation -->
         <div id="head" class="header">
             <h1>Portfolio</h1>
             <nav id="navig">
@@ -16,50 +17,56 @@
                 <a href="#achievements">Achievements</a>
                 <a href="#projects">Skills</a>
                 <a href="#contact">Contact</a>
-                <a id="opener">Weather</button>
-                <a id="dark">Dark mode</button>   
+                <a id="opener">Weather</a>
+                <a id="dark">Dark mode</a>   
             </nav>
         </div>
+
+        <!-- About Section -->
         <section id="about">
             <h2 class="h2-light-mode">About</h2>
-                <p>
-                    Hi! I'm John Programmer, a software developer passionate about creating efficient, scalable solutions. I specialize in turning complex problems into simple, effective code. 
-                    Whether it's building web apps or exploring machine learning, I’m driven by the challenge of solving problems and continuously learning.
-                    <br><br>
-                    My coding journey began at 12 with HTML and grew into a love for programming. 
-                    After earning my Computer Science degree, I’ve worked on various projects, ranging from full-stack web development to contributing to open-source tools.
-                </p>
+            <p>
+                Hi! I'm John Programmer, a software developer passionate about creating efficient, scalable solutions. I specialize in turning complex problems into simple, effective code. 
+                Whether it's building web apps or exploring machine learning, I’m driven by the challenge of solving problems and continuously learning.
+                <br><br>
+                My coding journey began at 12 with HTML and grew into a love for programming. 
+                After earning my Computer Science degree, I’ve worked on various projects, ranging from full-stack web development to contributing to open-source tools.
+            </p>
         </section>
+
+        <!-- Achievements Section -->
         <section id="achievements">
             <h2 class="h2-light-mode">Notable Achievements</h2>
             <ul style="list-style-type: disc;">
-                <li>contributing to an open-source machine learning library that gained traction in the developer communit</li>
-                <li>participating in hackathons where my team and I created an innovative real-time data analytics tool for social impact</li>
-                <li>Built a real-time collaborative note-taking web app using React and Firebase, which allowed multiple users to simultaneously edit and share notes. </li>
+                <li>Contributing to an open-source machine learning library that gained traction in the developer community</li>
+                <li>Participating in hackathons where my team and I created an innovative real-time data analytics tool for social impact</li>
+                <li>Built a real-time collaborative note-taking web app using React and Firebase, which allowed multiple users to simultaneously edit and share notes</li>
             </ul>
-            </section>
+        </section>
+
+        <!-- Skills and Technologies Section -->
         <section id="projects">
             <h2 class="h2-light-mode">Skills/Technologies</h2>
             <div class="project-container">
                 <div class="card text-white bg-dark mb-3" style="max-width: 250px">
-                    <img src="assets/JSLogo.png" alt="Javacript Logo" width="250px" height="250px">
-                    <h3>Javascript</h3>
-                    <p>Proficient in the use of vanilla Javascript programming language to make dynamic and interactive websites</p>
+                    <img src="assets/JSLogo.png" alt="JavaScript Logo" width="250px" height="250px">
+                    <h3>JavaScript</h3>
+                    <p>Proficient in the use of vanilla JavaScript programming language to make dynamic and interactive websites</p>
                 </div>
                 <div class="card text-white bg-dark mb-3" style="max-width: 250px">
-                    <img class="card-img-top" src="assets/react.png" alt="Card image cap" width="250px" height="250px">
+                    <img class="card-img-top" src="assets/react.png" alt="React Logo" width="250px" height="250px">
                     <div class="card-body">
-                      <h5 class="card-title">React</h5>
-                      <p class="card-text">Experience creating React applications in a micro-frontend archtecture pattern.</p>
+                        <h5 class="card-title">React</h5>
+                        <p class="card-text">Experience creating React applications in a micro-frontend architecture pattern.</p>
                     </div>
-                  </div>
+                </div>
                 <div class="card text-white bg-dark mb-3" style="max-width: 250px">
-                    <img class="card-img-top" src="assets/node.png" alt="Card image cap" width="250px" height="250px">
+                    <img class="card-img-top" src="assets/node.png" alt="Node.js Logo" width="250px" height="250px">
                     <div class="card-body">
-                      <h5 class="card-title">Node.JS</h5>
-                      <p class="card-text">Experience in creating scalable and high performance backend services with Node.JS.</p>
+                        <h5 class="card-title">Node.JS</h5>
+                        <p class="card-text">Experience in creating scalable and high-performance backend services with Node.JS.</p>
                     </div>
-                  </div>
+                </div>
                 <div class="card text-white bg-dark mb-3" style="max-width: 250px">
                     <img src="assets/GitLogo.png" alt="Git Logo" width="250px" height="250px">
                     <h3>Git</h3>
@@ -67,6 +74,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Contact Form -->
         <div id="draggable">
             <section id="contact">
                 <h2>Contact</h2>
@@ -81,11 +90,13 @@
                 </form>
             </section>
         </div>
+
+        <!-- Weather Modal -->
         <div id="weather-div" title="Weather Data">
             <p id="weather">Loading weather...</p> 
         </div>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+        <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
         <script src="script/jquery.stickyHeader.js"></script>

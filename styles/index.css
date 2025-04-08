@@ -1,12 +1,19 @@
+/* Base font styling for the page */
 body {
-    font-family: 
-    Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
-section { padding: 20px;}
+/* Add spacing around each section */
+section {
+    padding: 20px;
+}
 
-form label, form input, form textarea {margin-bottom: 10px;}
+/* Spacing for form labels and inputs */
+form label, form input, form textarea {
+    margin-bottom: 10px;
+}
 
+/* Styling for navigation links */
 nav a {
     color: #333;
     text-decoration: none;
@@ -14,14 +21,16 @@ nav a {
     cursor: pointer;
 }
 
+/* Contact form layout - centered and vertical */
 form {
-    display: none;
+    display: none; /* Hidden by default */
     margin: auto;
     text-align: left;
     display: flex;
     flex-direction: column;
 }
 
+/* Navigation bar layout */
 nav {
     display: flex;
     justify-content: space-between;
@@ -29,13 +38,15 @@ nav {
     margin: auto;
 }
 
-.fixed{
+/* Sticky header - stays at top */
+.fixed {
     position: fixed;
     top: 0;
     z-index: 10;
     width: 100%;
- }
+}
 
+/* Light mode header styling */
 .header {
     background-color: lightgrey;
     padding: 10px;
@@ -43,11 +54,13 @@ nav {
     border-bottom: 2px solid grey;
 }
 
+/* Header title spacing */
 .header h1 {
     margin: 0;
     padding-bottom: 10px;
 }
 
+/* Container for projects - flex layout */
 .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -56,6 +69,7 @@ nav {
     text-align: center;
 }
 
+/* Weather widget box styling */
 #weather {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -67,35 +81,44 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Weather widget text */
 #weather p {
     font-size: 18px;
     margin-top: 10px;
     color: #333;
 }
 
+/* Contact section animation (fade-in + slide) */
 #contact {
-    opacity: 0; 
-    transform: translateY(20px); 
+    opacity: 0;
+    transform: translateY(20px);
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
+/* Show contact section with animation */
 #contact.show {
     opacity: 1;
-    transform: translateY(0); 
+    transform: translateY(0);
 }
 
-#about h2, #projects h2, #contact h2, #achievements h2{
+/* Section headers styling */
+#about h2, #projects h2, #contact h2, #achievements h2 {
     font-size: 28px;
     margin-bottom: 10px;
     text-align: center;
 }
 
-#contact {width: 300px;}
+/* Contact form width */
+#contact {
+    width: 300px;
+}
 
+/* Project description text size */
 #projects p {
     font-size: small;
 }
 
+/* Dark mode header styling */
 .header-dark {
     background-color: rgb(28, 26, 26);
     padding: 10px;
@@ -103,13 +126,14 @@ nav {
     border-bottom: 2px solid grey;
 }
 
+/* Dark mode header text */
 .header-dark h1 {
     margin: 0;
     padding-bottom: 10px;
     color: white;
 }
 
-
+/* Dark mode nav links */
 .nav-dark a {
     color: white;
     text-decoration: none;
@@ -117,17 +141,20 @@ nav {
     cursor: pointer;
 }
 
+/* Dark mode project section */
 .project-dark {
     text-align: center;
     background-color: black;
-    color:white;
+    color: white;
 }
 
+/* Dark mode contact section */
 .contact-dark {
     width: 300px;
-    color:white;
+    color: white;
 }
 
+/* Dark mode weather text */
 .weather-dark {
     font-size: 18px;
     margin-top: 10px;
