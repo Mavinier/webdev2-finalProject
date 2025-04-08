@@ -79,6 +79,7 @@ $(function() {
             document.getElementById("navig").classList.toggle("nav-dark");
             document.getElementById("weather").classList.toggle("weather-dark");
             document.getElementById("contact").classList.toggle("contact-dark");
+            document.getElementById("projects").classList.toggle("project-dark");
             $("body").css("background-color"," rgb(28, 26, 26)");
         }
         else{
@@ -88,6 +89,7 @@ $(function() {
             document.getElementById("navig").classList.toggle("nav-dark");
             document.getElementById("weather").classList.toggle("weather-dark");
             document.getElementById("contact").classList.toggle("contact-dark");
+            document.getElementById("projects").classList.toggle("project-dark");
             $("body").css("background-color","white");
         }
     });

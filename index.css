@@ -29,14 +29,6 @@ nav {
     margin: auto;
 }
 
-#about h2, #projects h2, #contact h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-#contact {width: 300px;}
-
 .fixed{
     position: fixed;
     top: 0;
@@ -61,23 +53,8 @@ nav {
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: lightgrey;
-}
-
-.project-card {
     text-align: center;
-    width: 20%;
-    margin: 10px;
-    padding: 10px;
-    background-color: #f5f5f5;
 }
-
-
-.project-card img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
 
 #weather {
     font-family: Arial, sans-serif;
@@ -107,6 +84,18 @@ nav {
     transform: translateY(0); 
 }
 
+#about h2, #projects h2, #contact h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#contact {width: 300px;}
+
+#projects p {
+    font-size: small;
+}
+
 .header-dark {
     background-color: rgb(28, 26, 26);
     padding: 10px;
@@ -128,13 +117,10 @@ nav {
     cursor: pointer;
 }
 
-.project-card-dark {
+.project-dark {
     text-align: center;
-    width: 20%;
-    margin: 10px;
-    padding: 10px;
-    background-color: #f5f5f5;
-    color:black;
+    background-color: black;
+    color:white;
 }
 
 .contact-dark {
